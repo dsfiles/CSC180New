@@ -1,8 +1,8 @@
 /*
- * C# code collection - Week 01 
+ * exercise #1
+ * our first C# program wants to display "Hello World!" to the console (computer screen)
+ * but there are so many bugs, can you find all of them? have fun!
  */
-
-// our first C# program wants to display "Hello World!" to the console (computer screen) but there are many bugs, can you find all of them?
 
 Use Systems:
 namespace CSC180Week01
