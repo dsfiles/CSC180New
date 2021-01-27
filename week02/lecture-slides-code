@@ -1,1 +1,48 @@
-a
+/*
+ * Lecture slides/textbook code - Week 2
+ * Section 2.1 More writing, textbook page 13
+ */
+
+using System;
+
+namespace ThinkSharp
+{
+    public class Program
+    {
+        // Generates some simple output.
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, world."); // print one line
+            Console.WriteLine("How are you?"); // print another
+        }
+    }
+}
+
+
+/*
+ * Lecture slides / textbook code - Week 2
+ * Section 2.4 Printing variables, textbook page 16-17
+ */
+
+using System;
+namespace ThinkSharp
+{
+    public class Hello
+    {
+        public static void Main(string[] args)
+        {
+            string firstLine;
+            firstLine = "Hello, again!";
+            int hour, minute;
+            hour = 11;
+            minute = 59;
+            Console.WriteLine(firstLine);
+            Console.Write("The current time is ");
+            Console.Write(hour);
+            Console.Write(":");
+            Console.Write(minute);
+            Console.WriteLine(".");
+        }
+    }
+}
+
