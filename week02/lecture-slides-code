@@ -2,7 +2,6 @@
  * Lecture slides/textbook code - Week 2
  * Section 2.1 More writing, textbook page 13
  */
-
 using System;
 
 namespace ThinkSharp
@@ -23,7 +22,6 @@ namespace ThinkSharp
  * Lecture slides / textbook code - Week 2
  * Section 2.4 Printing variables, textbook page 16-17
  */
-
 using System;
 namespace ThinkSharp
 {
@@ -46,3 +44,25 @@ namespace ThinkSharp
     }
 }
 
+
+/*
+ * Lecture slides / textbook code - Week 2
+ * Section 2.6 Operators, textbook page 18
+ */
+using System;
+namespace ThinkSharp
+{
+    public class Hello
+    {
+        public static void Main(string[] args)
+        {
+            int hour, minute;
+            hour = 11;
+            minute = 59;
+            Console.Write("Number of minutes since midnight: ");
+            Console.WriteLine(hour * 60 + minute);
+            Console.Write("Fraction of the hour that has passed: ");
+            Console.WriteLine(minute / 60);
+        }
+    }
+}
