@@ -35,6 +35,31 @@ namespace CSC180Homework
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("  ^");
+            Console.WriteLine(" ^^^");
+            Console.WriteLine("^^^^^");
+        }
+    }
+}
+
+
+/*
+ * CSC180 Week01 Programming Assignment
+ * #4: Create a program that will display to the console the following pattern:
+ *   ^
+ *  ^^^
+ * ^^^^^
+ * Team members: Name1, Name2 and Name3
+ */
+
+using System;
+
+namespace CSC180Homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             Console.WriteLine("  ^\n ^^^\n^^^^^");
         }
     }
