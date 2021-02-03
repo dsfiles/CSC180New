@@ -1,11 +1,71 @@
 /*
+ * CSC180 Week03 
+ * topics: keyboard input (ReadLine), method (SayHello) definiton and invocation, etc.
+ */
+
+using System;
+
+namespace Week03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s;
+            Console.WriteLine("Please enter your name:");
+            s = Console.ReadLine();
+            SayHello(s);
+        }
+
+        public static void SayHello(string str)
+        {
+            Console.WriteLine("Hello " + str);
+        }
+    }
+}
+
+
+/*
+ * CSC180 Week03 
+ * topics: if ... else, modulus operator, relational operator ==
+ */
+
+using System;
+
+namespace CSC180
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int i = 18;
+            IsEven(i);
+            Console.WriteLine("continue ...");
+        }
+        public static void IsEven(int i)
+        {
+            if (i % 2 == 0)
+            {
+                Console.WriteLine("i is even");
+            }
+            else
+            {
+                Console.WriteLine("i is odd");
+            }
+        }
+    }
+}
+
+
+
+/*
  * Lecture slides / textbook code
  * 4.5 Nested conditionals
  */
 
 using System;
 
-namespace CSC205Week02
+namespace CSC180
 {
     class Program
     {
@@ -43,7 +103,7 @@ namespace CSC205Week02
 
 using System;
 
-namespace CSC205Week02
+namespace CSC180
 {
     class Program
     {
@@ -79,7 +139,7 @@ namespace CSC205Week02
 
 using System;
 
-namespace CSC205Week02
+namespace CSC180
 {
     class Program
     {
