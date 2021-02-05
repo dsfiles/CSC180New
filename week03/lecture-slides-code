@@ -166,3 +166,35 @@ namespace CSC180
         }
     }
 }
+
+
+//======== recursion ========
+/*
+ * CSC180 Week03
+ * Lecture slides / textbook code
+ * Exercise: Recursion
+ */
+using System;
+
+namespace CSC180
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Countdown(5);
+        }
+        public static void Countdown(int n)
+        {
+            if (n == 0)
+            {
+                Console.WriteLine("Blastoff!");
+            }
+            else
+            {
+                Console.WriteLine(n);
+                Countdown(n - 1);
+            }
+        }
+    }
+}
