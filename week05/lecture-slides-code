@@ -49,3 +49,29 @@ class CSC180Week05Exercise
 (4) long product = 1;
 (5) product * i
 */
+
+
+
+/*
+ * 1. Use for loops to print a multiplication table for the values from 1 to 6 
+ * (as shown in the middle of page 67) using System;
+ */
+using System;
+namespace ThinkSharp
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            for (int i = 1; i <= 6; i++)
+            {
+                for (int j = 1; j <= 6; j++)
+                {
+                    Console.Write(j * i + "\t");
+                }
+                Console.WriteLine("");
+            }
+        }
+    }
+}
+
