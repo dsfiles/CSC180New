@@ -41,7 +41,6 @@ class CSC180Week05Exercise
         return product;
     }
 }
-
 /* answers:
 (1) int sum=0;
 (2) i<=100 or i<101
@@ -49,6 +48,62 @@ class CSC180Week05Exercise
 (4) long product = 1;
 (5) product * i
 */
+
+
+
+/*
+ * 6.4 Two-dimensional tables
+ */
+using System;
+namespace CSC180
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            while (i <= 6)
+            {
+                Console.Write(2 * i + " ");
+                i = i + 1;
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+
+/*
+ * 6.5 Encapsulation and generalization
+ */
+using System;
+namespace CSC180
+
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            while (i <= 6)
+            {
+                WriteMultiples(i);
+                i = i + 1;
+            }
+        }
+        public static void WriteMultiples(int n)
+        {
+            int i = 1;
+            while (i <= 6)
+            {
+                Console.Write(n * i + " ");
+                i = i + 1;
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
 
 
 
