@@ -1,0 +1,25 @@
+/*
+ * Debugging exercise:
+ * The following code tries to print a 6 x 6 multiplication table using nested while loops.
+ * Can you figure out what is wrong?
+ */
+using System;
+namespace CSC180
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            int i=1, j=1;
+            while (i<=6) {
+                while (j <= 6)
+                {
+                    Console.Write(i * j + "\t");
+                    j++;
+                }
+                Console.WriteLine();
+                i++;
+            }
+        }
+    }
+}
