@@ -23,3 +23,31 @@ namespace CSC180
         }
     }
 }
+
+
+
+/*
+ * CSC 180 Week6 Exercise - data types: int and char
+ */
+
+using System;
+namespace CSC180
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            char c = (char)97;
+            int i = c;
+            Console.WriteLine(c);
+            Console.WriteLine(i);
+            Console.WriteLine(i-c);
+            Console.WriteLine((char)i);
+            Console.WriteLine((char)(c++));
+            Console.WriteLine(c);
+            Console.WriteLine((char)7);
+        }
+    }
+}
+
+
