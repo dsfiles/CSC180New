@@ -111,3 +111,52 @@ namespace CSC180
 
 
 
+/*
+ * 7.5 The IndexOf Method
+ */
+using System;
+namespace CSC180
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string fruit = "banana";
+            Console.WriteLine(fruit.IndexOf('a'));
+            Console.WriteLine(fruit.IndexOf('a',2));
+            Console.WriteLine(fruit.IndexOf('a',5));
+            Console.WriteLine(fruit.IndexOf('a', 6));
+        }
+    }
+}
+
+
+ 
+ /*
+ * 7.7 Looping and Counting
+ */
+using System;
+namespace CSC180
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string fruit = "banana";
+            int count = 0;
+            int index = 0;
+            while(index < fruit.Length)
+            {
+                if (fruit[index] == 'a')
+                {
+                    count++;
+                }
+                index++;
+            }
+            Console.WriteLine(count);
+        }
+    }
+}
+
+
+
