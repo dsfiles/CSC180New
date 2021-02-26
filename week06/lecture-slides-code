@@ -189,3 +189,91 @@ namespace CSC180
         }
     }
 }
+
+
+
+/*
+ * B.3 File input: simple demo of reading a text file, page 169 textbook
+---- version 1 ----
+*/
+using System;
+using System.IO; //file Input and Output (I/O) operations are provided by the System.IO
+namespace CSC180
+{
+    public class ListFile
+    {
+        public static void Main()
+        {
+            //words.txt should be in the same folder as the executable file
+            //otherwise, an absolute path is needed, e.g, "c:/words.txt"
+            processFile("words.txt");
+        }
+        private static void processFile(string filename)
+        {
+            string line; //temporary varible to hold a line of text
+            int count = 1; //variable to keep track of the number of lines read
+            //create a datastream reader as a text reader
+            TextReader reader = new StreamReader(filename);
+            //StreamReader reader = new StreamReader(filename);
+            while (true)
+            {
+                line = reader.ReadLine();
+                if (line == null)
+                {
+                    break; //jump out while loop after reading an empty line (end of file)
+                }
+                Console.WriteLine(count + ": " + line);
+                count++;
+            }
+            reader.Close();
+        }
+    }
+}
+
+
+
+/*
+ B.3 File input: Simple demo of reading a text file
+---- version 2 with exception (file not found) handling----
+*/
+
+using System;
+using System.IO;
+
+namespace CSC180
+{
+    public class ListFile
+    {
+
+        public static void Main()
+        {
+            try
+            {
+                processFile("words.txt");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("That didn't work. Here's why:");
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+            }
+        }
+        private static void processFile(string filename)
+        {
+            string line;
+            int count = 1;
+            TextReader reader = new StreamReader(filename);
+            while (true)
+            {
+                line = reader.ReadLine();
+                if (line == null)
+                {
+                    break;
+                }
+                Console.WriteLine(count + ": " + line);
+                count++;
+            }
+            reader.Close();
+        }
+    }
+}
