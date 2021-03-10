@@ -1,0 +1,27 @@
+/*
+ * CSC180 Week 8 sample code
+ */
+using System;
+namespace ThinkSharp
+{
+    public class MysteryClass
+    {
+        public static string Mystery(string s)
+        {
+            int i = s.Length - 1;
+            string total = "";
+            while (i >= 0)
+            {
+                char ch = s[i];
+                Console.WriteLine(i + " " + ch);
+                total = total + ch;
+                i--;
+            }
+            return total;
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(Mystery("madam"));
+        }
+    }
+}
